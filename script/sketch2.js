@@ -29,19 +29,22 @@ function setup() {
 
     frameRate(fr)
     zSlider = createSlider(-0.1, 0.5, 0, .001);
-    zSlider.position(760, 520);
+    zSlider.position(780, 530);
+    zSlider.addClass('clicked');
     zSlider.style('width', '60px');
     // zSlider.changed(emptyArray);
 
 
     nSlider = createSlider(0, data.drawing.length - 2, 0, 1);
-    nSlider.position(650, 520);
+    nSlider.position(650, 530);
+    nSlider.addClass('clicked');
     nSlider.style('width', '60px');
     nSlider.changed(emptyArray);
 
 
     checkbox = createCheckbox(false);
     checkbox.position(585, 524);
+    checkbox.addClass('checkbox');
     checkbox.changed(myCheckedEvent);
 
     function myCheckedEvent() {
