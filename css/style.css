@@ -1,12 +1,10 @@
-/* font-family: 'Norican', cursive;
-font-family: 'Ultra', serif;
-font-family: 'Pridi', serif; */
-*{
-    background-color: rgb(55, 52, 125);
-}
+
+
 body {
     background-color:rgb(55, 52, 125);
     margin: 0;
+    padding: 0;
+    border:200px;
     text-align: center;
 }
 
@@ -21,23 +19,19 @@ h1 {
 .top-container {
     background-color: rgb(55, 52, 125);
     color: #f7f3fa;
-    position: relative;
-    margin-left: 0;
-    padding: 10px;
-    padding-top: 100px;
+   
+    border: 0;
+    margin-top: 0;
+    padding: 0;
+    
 }
 
 
-.middle-container {
-    background-color: aqua;
-   
-}
-.bottom-container {
-    background-color: #00ffffb4;
-   
-}
+
 .pro{
-    animation:blinkingText 1s ease-in-out infinite;
+    animation:blinkingText 4s ease-in-out infinite;
+    padding: 1rem;
+    border-radius: 50%;
 }       
   @keyframes blinkingText{
     0%{     background-color: #ffee02ed; color:black;   }
@@ -47,7 +41,3 @@ h1 {
     100%{   background-color: #ffee02ed; color:black;   }
 }
 
-input {
-    background-color:rgb(55, 52, 125);
-    margin:none;
-}
