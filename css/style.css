@@ -1,0 +1,53 @@
+/* font-family: 'Norican', cursive;
+font-family: 'Ultra', serif;
+font-family: 'Pridi', serif; */
+*{
+    background-color: rgb(55, 52, 125);
+}
+body {
+    background-color:rgb(55, 52, 125);
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0%;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+    /* width: 7%;
+    margin: 0 auto; */
+}
+
+.top-container {
+    background-color: rgb(55, 52, 125);
+    color: #f7f3fa;
+    position: relative;
+    margin-left: 0;
+    padding: 10px;
+    padding-top: 100px;
+}
+
+
+.middle-container {
+    background-color: aqua;
+   
+}
+.bottom-container {
+    background-color: #00ffffb4;
+   
+}
+.pro{
+    animation:blinkingText 1s ease-in-out infinite;
+}       
+  @keyframes blinkingText{
+    0%{     background-color: #ffee02ed; color:black;   }
+    25%{    background-color: transparent; color: white;  }
+    50%{    background-color: transparent; color: white; }
+    75%{    background-color: transparent; color: white; }
+    100%{   background-color: #ffee02ed; color:black;   }
+}
+
+input {
+    background-color:rgb(55, 52, 125);
+    margin:none;
+}
