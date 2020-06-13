@@ -24,7 +24,7 @@ function setup() {
 
     let width = windowWidth
     let height = windowHeight
-    console.log(width,height)
+    // console.log(width,height)
     var canvas = createCanvas(380, 360);
     canvas.parent('sketch-holder');
     colorMode(HSB, 1, 1, 1);
@@ -32,21 +32,21 @@ function setup() {
 
     frameRate(fr)
     zSlider = createSlider(-0.1, 0.5, 0, .001);
-    zSlider.position(width / 2 + 150, height / 2 + 170);
+   
     zSlider.addClass('clicked');
     zSlider.style('width', '60px');
     // zSlider.changed(emptyArray);
 
 
     nSlider = createSlider(0, data.drawing.length - 2, 0, 1);
-    nSlider.position(width / 2, height /2 + 170);
+  
     nSlider.addClass('clicked');
     nSlider.style('width', '60px');
     nSlider.changed(emptyArray);
 
 
     checkbox = createCheckbox(false);
-    checkbox.position(width / 2 - 100, height / 2 + 170);
+   
     checkbox.addClass('checkbox');
     checkbox.changed(myCheckedEvent);
 
@@ -143,10 +143,15 @@ function draw() {
     textFont('Ultra');
     noStroke();
     fill(1);
+    
     text('Circles - ' + (data.drawing.length - nSlider.value() - 1), width / 2 , height / 2 + 160);
-    text('Donkey', width / 2 - width/4, height/2+ 160
+    text('Donkey', width / 2 - width/ 4, height/ 2+ 160
     );
-    text('Z - ' + zSlider.value() * 1000 , width / 2 + 120, height / 2 + 160);
+    text('Z - ' + zSlider.value() * 1000 , width / 2 + 100, height / 2 + 160);
+    zSlider.position(windowWidth/2+ width/ 4 , windowHeight/2 + height/1.4);
+    nSlider.position(windowWidth/2 , windowHeight/2 + height/1.4);
+    checkbox.position(windowWidth/2- width/ 4 , windowHeight/2 + height/1.4);
+
     const dt = (TWO_PI / fourierX.length);
     time += dt ;
 
