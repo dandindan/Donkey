@@ -31,7 +31,11 @@ h3 {
     /* width: 7%;
     margin: 0 auto; */
 }
-
+.update{
+    font-family: Norican;
+    font-weight: 100;
+    color: darkcyan;
+}
 .top-container {
     background-color: rgb(55, 52, 125);
     color: #f7f3fa;
